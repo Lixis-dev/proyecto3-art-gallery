@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+@use "../abstracts";
+.footer,
+.footer_map {
+  padding: 48px 32px;
+  @include abstracts.flex(38px);
+  nav ul {
+    @include abstracts.flex(1rem);
+    list-style: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer,
+  .footer_map {
+    padding: 56px 39px;
+    &__p {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer,
+  .footer_map {
+    padding: 80px 165px;
+  }
+}

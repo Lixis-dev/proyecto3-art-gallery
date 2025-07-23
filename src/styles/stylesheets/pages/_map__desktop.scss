@@ -1,0 +1,25 @@
+@use '../abstracts';
+
+@media (min-width:1140px){
+    .map {
+        &__button{
+            left: 156px;
+        }
+    }
+    .map-hero{
+        padding: 104px 165px 128px;
+        gap: 220px;
+        &__title{
+            width: 350px;
+        }
+        &__contenido{
+            width: 540px;
+            gap: 24px;
+             &__p2{
+                width: 100%;
+            }
+        }
+
+    }
+
+}

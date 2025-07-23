@@ -1,0 +1,94 @@
+@use "../abstracts";
+@media (min-width: 1440px) {
+  .hero {
+    
+    &__contenido {
+        width: 1440px;
+        height: 800px;
+        background-size: 540px 800px, 100%;
+        background-position: center;
+        background-image: url(/img/retrato.jpg), 
+        linear-gradient(90deg, black 50%, white 50%);
+        gap: 246px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 190px 0 0 0  ;
+        align-content: center;
+
+        &__title{
+            width: 514px;
+            margin: 0;
+            padding-right: 60px;
+        }
+        .big{
+            width: 350px;
+            gap: 64px;
+
+        }
+    }
+ 
+  }
+  /*
+   .hero {
+    
+    &__contenido {
+      width: 1140px;
+      height: 800px;
+      background-size: 540px 800px;
+      margin: 0;
+      gap: 48px;
+
+      &__title {
+        width: 88%;
+        margin: 0;
+      }
+      &__p {
+        width: 91%;
+      }
+    }
+  }
+  */
+   .day{
+    margin-top: 180px;
+    gap: 125px;
+    justify-content: center;
+        &__img{
+            width: 635px;
+            height: 400px;
+        }
+        &__contenido{
+            width: 350px;
+            gap: 32px;
+            &__title{
+                width: 350px;
+
+            }
+            &__p{
+                width: 350px;
+            }
+        }
+    }
+    .inspired{
+        justify-content: center;
+        gap: 30px;
+        margin: 19px 0 180px;
+        &__img1{
+            width: 635px;
+            height: 720px;
+        }
+        &__img2{
+            width: 445px;
+            height: 313px;
+
+        }
+        &__contenido{
+            width: 445px;
+            height: 377px;
+            padding: 65px 48px;
+            &__p{
+                width: 100%;
+            }
+
+        }
+    }
+}

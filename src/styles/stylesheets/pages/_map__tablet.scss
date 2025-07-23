@@ -1,0 +1,25 @@
+@use '../abstracts';
+@media (min-width: 768px){
+    .map {
+        
+        &__button{
+            left: 40px;
+        }
+    }
+    .map-hero {
+        padding: 88px 40px 80px;
+        gap: 68px;
+        flex-direction: row;
+        &__title{
+            margin-top: 0;
+        width: 30%;}
+        &__contenido{
+            width: 60%;
+            flex-direction: column;
+            &__p2{
+                width: 98%;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@use "../abstracts";
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: abstracts.$text-color;
+  font: normal 125% / 1.4 abstracts.$text-font-stack;
+}
+
+* {
+  font-family: abstracts.$font-text;
+}
+h1, h2, h3, a {
+    font-family: abstracts.$font-titles;
+
+}
+
+p {
+  @include abstracts.responsitive-p;
+}
+
+a {
+  @include abstracts.responsitive-a;
+}
+
+/// tipografía index
+
+.hero__contenido__title {
+  @include abstracts.responsitive-h1-index;
+}
+
+.day__contenido__title,
+.inspired__contenido__title{
+  @include abstracts.responsitive-h2-index;
+}
+
+
+/// tipografia map
+
+.map-hero__title{
+  @include abstracts.responsitive-h1-map
+}
+
+.map-hero__contenido__title{
+  @include abstracts.responsitive-h2-map
+}
+
+/// tipografía footer
+
+.footer__p, .footer_map__p{
+  @include abstracts.responsitive-p-footer
+}
+

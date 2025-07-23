@@ -1,0 +1,90 @@
+@use "../abstracts";
+
+* {
+  color: abstracts.$color-black;
+}
+
+// index
+.hero__contenido {
+  background-color: abstracts.$color-white;
+}
+@media (min-width:1440px){
+  .hero__contenido__title{
+  color: abstracts.$color-white;
+  }
+}
+
+.footer a {
+  color: abstracts.$color-white;
+  background-color: abstracts.$color-black;
+}
+.inspired__contenido {
+  background-color: abstracts.$color-black;
+  &__title,
+  &__p {
+    color: abstracts.$color-white;
+  }
+}
+
+.hero__contenido__a a {
+  background-color: abstracts.$color-black;
+  color: abstracts.$color-white;
+  &:hover, &:active{
+    background-color: abstracts.$color-brown;
+    span{
+      background-color: abstracts.$color-black;
+    }
+  }
+}
+
+
+a > span {
+  color: abstracts.$color-white;
+  background-color: abstracts.$color-brown;
+  
+}
+
+.footer {
+  background-color: abstracts.$color-black;
+}
+
+.footer__p,
+.footer__nav i {
+  color: abstracts.$color-white;
+}
+
+// map
+.map a {
+  background-color: abstracts.$color-black;
+  color: abstracts.$color-white;
+  &:hover, &:active{
+    background-color: abstracts.$color-brown;
+    span{
+      background-color: abstracts.$color-black;
+    }
+  }
+  
+}
+
+.map-hero {
+  background-color: abstracts.$color-black;
+  &__title {
+    color: abstracts.$color-white;
+  }
+  &__contenido {
+    &__title {
+      color: abstracts.$color-brown;
+    }
+    &__p1 span {
+      color: abstracts.$color-white;
+    }
+
+    &__p2 {
+      color: abstracts.$color-white;
+    }
+  }
+}
+
+.footer_map {
+  background-color: abstracts.$color-brown;
+}

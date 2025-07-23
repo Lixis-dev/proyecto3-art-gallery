@@ -1,0 +1,43 @@
+@use "../abstracts";
+
+// sección map
+.map {
+  position: relative;
+  &__button {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    z-index: 2;
+    &__a {
+      padding: 24px 35px 24px 0px;
+      span {
+        padding: 26px 14px 26px 18px;
+        margin-right: 32px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &__img {
+    height: 550px;
+    display: flex;
+    position: relative;
+  }
+
+}
+
+// sección hero
+.map-hero {
+  padding: 15px 16px 56px;
+  @include abstracts.flex;
+  &__contenido {
+    @include abstracts.flex(20px);
+    &__title {
+      text-transform: uppercase;
+    }
+    &__p1 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
